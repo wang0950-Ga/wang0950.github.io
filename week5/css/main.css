@@ -3,7 +3,7 @@ This is a CSS comment
 Shortcut for adding the comment is command/ctrl + /
 */
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: darkslategrey;
 }
@@ -17,7 +17,10 @@ p {
 }
 
 /* Selecting multiple elements */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     text-decoration: underline;
 }
 
@@ -29,7 +32,7 @@ nav ul {
 
 /* Selecting child elements mulitple levels */
 nav ul a {
-    color:darkslategray;
+    color: darkslategray;
     text-decoration: none;
 }
 
@@ -40,17 +43,17 @@ nav ul a {
 }
 
 /* Selecting HTML elements with class name*/
-.blue-link{
+.blue-link {
     background-color: darkseagreen;
     color: antiquewhite;
     text-decoration: none;
 }
 
-.large-text{
-    font-size: 24px ;
+.large-text {
+    font-size: 24px;
 }
 
-.white-text{
+.white-text {
     color: antiquewhite;
 }
 
@@ -71,28 +74,27 @@ h3~p {
 }
 
 /* Attribute Selector*/
-[href="#treatoftheweek"]{
+[href="#treatoftheweek"] {
     font-weight: bold;
 }
 
-[src$=".jpg"]{
+[src$=".jpg"] {
     border: 4px solid darkslategray;
 }
 
 /* psuedo classes */
 /* Styling the navigation*/
-nav ul a, 
-nav ul a:link, 
+nav ul a,
+nav ul a:link,
 nav ul a:visited {
     background-color: antiquewhite;
     /* horizontal, vertical, blur, spread, color*/
     box-shadow: -2px 2px 4px 2px #000;
-} 
+}
 
 /* add class of current to HTML home link after adding hover and focus. */
-nav ul .current
-nav ul a:hover,
-nav ul a:focus{
+nav ul .current nav ul a:hover,
+nav ul a:focus {
     text-decoration: underline;
 }
 
@@ -102,43 +104,43 @@ nav ul a:active {
 
 /*first child and last child */
 aside ul li:first-child {
-    font-weight:bold;   
+    font-weight: bold;
 }
 
-section ol li:last-child{
+section ol li:last-child {
     font-weight: bold;
 }
 
 /*styling a table*/
-table{
+table {
     border-collapse: collapse;
 }
 
 /*nth-child selectors - even/odd */
-tbody tr:nth-child(even){
+tbody tr:nth-child(even) {
     background-color: #d5836c;
 }
 
 /* Using the nth-child with n*/
 /* where n is 0,1,2,3 until the number of elements end*/
-table th:nth-child(n), 
-table td:nth-child(n){
+table th:nth-child(n),
+table td:nth-child(n) {
     border: 1px solid black;
 }
 
 /* Using a formula in nth - child selectors */
 /*1,3,5,7*/
-table td:nth-child(2n+1){
-   background-color: rgba(0, 0, 0, 0.2)
+table td:nth-child(2n+1) {
+    background-color: rgba(0, 0, 0, 0.2)
 }
 
 /* CSS Specificity */
 /* formula: inline style, ID, class, tag-name */
 /*                     0, 0,    0,     0 */
-footer{
+footer {
     background-color: aqua;
 }
 
-footer{
+footer {
     background-color: red;
 }
