@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+        <title>Contect Us</title>
+        <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>  
+    <header>
+        <h1>Galileo's Coffee shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contect.html" class="current">Contect Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Contect Us</h2>
+        <table>
+            <caption>Hours of Operation</caption>
+            <thead>
+                <th>Day</th>
+                <th>Hours</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Mon - Fri</td>
+                    <td>6AM - 9PM</td>
+                </tr>
+                <tr>
+                    <td>Sat</td>
+                    <td>8AM - 11PM</td>
+                </tr>
+                <tr>
+                    <td>Sun</td>
+                    <td>Closed</td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- Addinng secton for contact form -->
+        <section>
+            <h3>We would love to hear form you!</h3>
+            <!-- Adding a form -->
+            <!-- hold alt up or down -->
+            <form action="thanks.html" method="post">
+                <div>
+                    <label for="fullname">Your Name</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="Jane/Joe Doe">
+                </div>
+                <div>
+                    <label for="youremail">Email</label>
+                    <input type="email" id="youremail" placeholder="Algonquin Email" value="@Algonquinlive.com"
+                        required>
+                </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </div>
+                <div>
+                    <label for="tickets">How many tickets? &#40;sold in pairs&#41;</label>
+                    <input type="number" name="tickets" id="tickets" min="2" max="10" step="2" value="2">
+                </div>
+                <div>
+                    <label for="row">Row</label>
+                    <select name="row" id="row">
+                        <option value="front">Front Row</option>
+                        <option value="center" selected>Center Row</option>
+                        <option value="back">Back Row</option>
+                    </select>
+                </div>
+                <div>
+                    <h3>Have you been here before</h3>
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="past" id="yes">
+
+                    <label for="no">No</label>
+                    <input type="radio" name="past" id="no">
+                </div>
+                <div>
+                    <h3>Policies</h3>
+                    <label for="policies">I agree to the terms and conditions.</label>
+                    <input type="checkbox" name="policies" id="policies">
+                </div>
+                <button type="button">Submit</button>
+            </form>
+        </section>
+    </main>
+    <!-- Site Footer -->
+    <footer>
+        <!-- Special symbols for HTML can be found by googling HTML Entities -->
+        <!-- &copy; -->
+        Copyright &copy; Galileo's Coffee Shop, 2023
+    </footer>
+</body>
+
+</html>
