@@ -1,12 +1,127 @@
-<!-- html:5 -->
 <!DOCTYPE html>
+<!-- Create a new folder named "midterm" in your GitHub repository -->
+<!-- Add CSS file and images in proper folders -->
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kendo</title>
+    <link rel="stylesheet" href="css/main.css">
 </head>
+
 <body>
-    
+    <!-- Header - Use the image tag to add the image and position the site title on top of it -->
+    <div class="container">
+        <header>
+            <h1>What is Kendo?</h1>
+            <img src="images/kenshi247.webp" alt="">
+            <p><abbr title="剣道, Kendō, lit. 'sword way', 'sword path' or 'way of the sword">Kendo</abbr> is
+                a modern
+                Japanese martial art,
+                descended from <abbr title="one of the old Japanese martial arts, swordsmanship">kenjutsu</abbr> ,
+                that
+                uses <abbr title="shinai">bamboo swords</abbr>
+                as well as protective <abbr title="bōgu">armor</abbr>. Today, it is widely practiced within Japan
+                and
+                has
+                spread to
+                many other nations across the world. - <cite>WIKIPEDIA KENDO</cite>
+            </p>
+            <nav>
+                <ul>
+                    <li><a href="#" target="_blank">Home</a></li>
+                    <li><a href="#" target="_blank">Rules</a></li>
+                    <li><a href="#" target="_blank">Grades</a></li>
+                    <li><a href="#" target="_blank">Contect us</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div class="middle">
+                <h2>Rules</h2>
+                <article>
+                    <!-- Article - Image should have the text wrapping around it -->
+                    <p class="one">
+                        <img src="images/rules.jpg" alt=""><abbr title="有効打突, yūkō-datotsu">A scorable point</abbr> in a
+                        <abbr title="tai-kai">kendo competition</abbr> is defined as an accurate
+                        strike or thrust made onto a datotsu-bui of the opponent's kendo-gu with the shinai making
+                        contact at its datotsu-bu, the competitor displaying high spirits, correct posture and followed
+                        by zanshin.<br>Zanshin (残心), or continuation of awareness, must be present and shown throughout
+                        the execution
+                        of the strike and the kendōka must be mentally and physically ready to attack again.
+                    </p>
+                    <p> In competition, there are usually three referees (審判, shinpan). Each referee holds a red flag
+                        and
+                        a white flag in opposing hands. To award a point, a referee raises the flag corresponding to the
+                        color of the ribbon worn by the scoring competitor. Usually, at least two referees must agree
+                        for a point to be awarded. Play is stopped after each point is awarded.
+                    </p>
+                    <dd>
+                    <dt>Datotsu-bui or point scoring targets in kendo are defined as:</dt>
+                    
+                        <ul>
+                            <li>Men-bu, the top or sides of the head protector (sho-men and sayu-men).</li>
+                            <li>Kote-bu, a padded area of the right or left wrist protector (migi-kote and
+                                hidari-kote).
+                            </li>
+                            <li>Do-bu, an area of the right or left side of the armour that protects the torso
+                                (migi-do
+                                and hidari-do).</li>
+                            <li>Tsuki-bu, an area of the head protector in front of the throat (Tsuki-dare).</li>
+                        </ul>
+                    </dd>
+            </div>
+            <!-- Facts - Use proper syntax for listing the facts -->
+            <div class="column">
+                <h2>Grades</h2>
+                <P>
+                    <img src="images/kids-kendo-1000.jpg" alt=""> achievement in kendo is measured by advancement in
+                    grade, rank or level. The kyū (級) and
+                    dan (段) grading system, created in 1883, is used to indicate one's proficiency in kendo. The dan
+                    levels are from first-dan (初段, sho-dan) to tenth-dan (十段, jū-dan). There are usually six grades
+                    below first-dan, known as kyu. The kyu numbering is in reverse order, with first kyu (一級, ikkyū)
+                    being the grade immediately below first dan, and sixth kyu (六級, rokkyū) being the lowest grade.
+                    There are no visible differences in dress between kendo grades; those below dan-level may dress the
+                    same as those above dan-level.
+                </P>
+            </div>
+            </article>
+            <section>
+                <div>
+                    <!-- Form - All the inputs must be linked to the relative labels. -->
+                    <h2>Contect us</h2>
+                    <form action="thanks.com" method="post">
+                        <div class="name">
+                            <label for="fullname">Name</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="fullname" required>
+                        </div>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" placeholder="xxx@xxx.xxx" required>
+                        </div>
+                        <div class="message">
+                            <label for="message">Your message</label>
+                            <textarea id="message"></textarea>
+                        </div>
+                        <div class="level">
+                            <p>What is your Kendo level?</p>
+                            <label for="beginner">Beginner</label>
+                            <input type="radio" name="level" id="beginner" value="beginner">
+                            <label for="1-3 dan">1-3 Dan</label>
+                            <input type="radio" name="level" id="1-3 dan" value="1-3 dan">
+                            <label for="4-5 dan">4-5 Dan</label>
+                            <input type="radio" name="level" id="4-5 dan" value="4-5 dan">
+                        </div>
+                        <button type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <div class="sidebar"></div>
+        <footer>
+            <p>&copy;WANG ZHIDA</p>
+        </footer>
+    </div>
+    </div>
 </body>
 </html>
