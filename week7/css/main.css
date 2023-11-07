@@ -80,8 +80,20 @@ nav ul a {
     /* 1em x 20px(element font size) = 20px */
     width: 50%;
     /* height is 100% of the browser size and it is dynamic */
-    height: 100vh
+    height: 100vh;
+
+    position: relative;
+    padding:1em 1em 4em 1em;
+
 }
+
+/* Position Absolute */
+.blue-link.large-text{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
 
 /* Selecting HTML elements with class name*/
 .blue-link {
@@ -153,6 +165,16 @@ h3~p {
 
 [src$=".jpg"] {
     border: 4px solid darkslategray;
+}
+
+/* fixed navigation */
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0,0,0,0.8);
+
 }
 
 /* psuedo classes */
