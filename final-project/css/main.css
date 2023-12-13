@@ -1,16 +1,109 @@
+/********************
+   Custom Styles 
+ ********************/
+/******* Global Styles**********/
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+body {
+    line-height: 1.5;
+}
+
+*,
+*:after *:before {
+    box-sizing: inherit;
+    line-height: inherit;
+}
+
+.clearfix::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+img {
+    width: 100%;
+}
+
+/* loVe HAte: Link, Visited. Hover/Focus, Active */
+a,
+a:link,
+a:visited {
+    color: inherit;
+}
+
+a:hover,
+a:focus {
+    color: #c68f2b;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-weight: bold;
+    margin: 1em 0 0.5em;
+}
+
+/* To ensure that font sizes are portionate to each other and not random values: www.modularscale.com */
+
+h1 {
+    color: white;
+    font-size: 9vw;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 3.375em;
+}
+
+h3 {
+    font-size: 2.25em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
+}
+
+p {
+    margin: 1em 0;
+}
+
 .container {
+    max-width: 1200px;
     margin: 0 auto;
-    max-width: 760px;
-    font-family: OPen sans-serif;
+    padding: 1em;
 }
 
 .masthead {
-    background-color: black;
+    background-color: #222;
     padding: 10px 10px 10px 10px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+/* header  */
 .banner {
     background: #c68f2b;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
 }
 
 .navlist li a {
@@ -19,7 +112,7 @@
     text-align: center;
     font-size: large;
     color: #c68f2b;
-    padding: 14px 15px;
+    padding: 30px 30px;
 }
 
 .navlist li a:hover {
@@ -28,43 +121,801 @@
 }
 
 .search input {
-    width: 650px;
-    height: 30px;
+    width: 80vw;
+    height: 4.5vh;
 }
 
 .search button {
-    width: 30px;
-    height: 30px;
-    background-color: rgb(252, 252, 252);
-    z-index: 1;
+    float: right;
+    border-color: #c68f2b;
+    background-color: rgb(2, 2, 2);
+    width: fit-content;
+    height: fit-content;
 }
 
-.content img {
-    width: 100%;
+
+.fa-magnifying-glass {
+    font-size: 1.5em;
+    color: #c68f2b;
+    padding: 10px 5px 10px 5px;
 }
 
-.welcome h1, p, button {
-    text-align: left;
-    position: relative;
-    bottom: 400px;
-    z-index: 1;
+/* header over */
+/* main sthreestars start */
+
+.threestars {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    background: url(../images/main-banner.jpg) no-repeat center;
+    background-size: 100%;
+    height: fit-content;
 }
 
-.welcome h1 {
+.threestars div {
+    background: rgba(2, 2, 2, 0.5);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.threestars h1 {
     color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-size: 72px;
-    width: 760px;    
-    margin: 0;
+    font-size: 9vw;
+    padding-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+    line-height: 1.5em;
 }
 
-.welcome p {
-    color:white;
-    background-color: rgba(0, 0, 0, 0.7);
-    font-size: 16px;
-    padding: auto;
+.threestars p {
+    color: white;
+    font-size: 2vw;
+    margin: 1em 0 0.5em;
+    margin-left: 10px;
 }
 
-.welcome button {
+.threestars button {
+    height: 10.5vh;
+    width: 45%;
+    background-color: #c68f2b;
+    color: black;
+    font-size: 1.5rem;
+    border-color: #c68f2b;
+    margin: 1em 0 1em;
+    margin-left: 10px;
+}
+
+
+/* main threestars over */
+/* main aboutus start */
+
+.aboutus {
+    background-color: #ffe6ac;
+    color: #222;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+.aboutus h2 {
+    font-size: 7vw;
+    color: #222;
+    padding-top: 5px;
+    margin: 10px 10px 10px 10px;
+    font-weight: bold;
+}
+
+.aboutus p {
+    font-size: 2vw;
+    color: #222;
+    padding-top: 5px;
+    margin: 10px 10px 10px 10px;
+    padding: 4px 4px 4px 4px;
+}
+
+/* main aboutus over */
+/* main ourservices start */
+
+.ourservices h2 {
+    color: #222;
+    font-weight: bold;
+    font-size: 7vw;
+    padding-top: 5px;
+    margin: 10px 10px 10px 10px;
+}
+
+.digital,
+.marketing,
+.video,
+.web,
+.print {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #ffe6ac;
+    padding-bottom: 20px;
+}
+
+.digital h3,
+.marketing h3,
+.video h3,
+.web h3,
+.print h3 {
+    color: #222;
+    font-weight: bold;
+    font-size: 5.5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+.digital p,
+.marketing p,
+.video p,
+.web p,
+.print p {
+    color: #222;
+    font-size: 2vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.digital button,
+.marketing button,
+.video button,
+.web button,
+.print button {
+    height: 10.5vh;
+    width: 35%;
+    background-color: #222;
+    color: white;
+    margin-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* main details over */
+/* main vision start */
+.vision {
+    background: url(../images/vision.jpg) no-repeat center;
+    background-size: 100%;
+    height: fit-content;
+}
+
+.vision h3 {
+    color: white;
+    font-weight: bold;
+    font-size: 5.5vw;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+.vision p {
+    color: white;
+    font-size: 2vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.vision button {
+    height: 10.5vh;
+    width: 35%;
+    background-color: rgba(2, 2, 2, 0.5);
+    color: white;
+    margin-left: 10px;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+    border-color: #c68f2b;
+}
+
+/* main vision over */
+/* main team start */
+
+.team {
+    display: flex;
+    flex-direction: column;
+}
+
+.team h2 {
+    margin-top: 25px;
+    color: #222;
+    font-weight: bold;
+    font-size: 7vw;
+    padding: 10px 10px 10px 10px;
+}
+
+.john,
+.bob {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    background-color: #ffe6ac;
+}
+
+.john h3,
+.bob h3 {
+    margin-top: 30px;
+    margin-left: 10px;
+    color: #222;
+    font-weight: bold;
+    font-size: 5.5vw;
+}
+
+.john h4,
+.bob h4 {
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 2vw;
+    color: #222;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #c68f2b;
+}
+
+.john p,
+.bob p {
+    color: #222;
+    font-size: 2vw;
+    padding: 10px 10px 10px 10px;
+    margin-bottom: 20px;
+}
+
+/* main team over */
+/* Contect Us start */
+.cont {
+    font-size: 7vw;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 40px;
+}
+
+.contect {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.contect h2 {
+    font-weight: bold;
+    padding-bottom: 15px;
+    font-size: 7vw;
+}
+
+.contect h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    font-size: 5.5vw;
+}
+
+.form .name label {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.form .name input {
+    width: 97%;
+    height: 5vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.form .email label {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.form .email input {
+    width: 97%;
+    height: 5vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.form .message label {
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.form .message textarea {
+    width: 97%;
+    height: 15vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.form button {
+    color: #c68f2b;
+    font-weight: bold;
+    background-color: #222;
+    border: #222;
+    width: 8vw;
+    height: 4vh;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.hours table {
+    width: 97%;
+    height: 21vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.hours table thead th,
+td {
+    border: 1px solid #222;
+    height: 7vh;
+    font-weight: bold;
+    color: #222;
+    text-align: center;
+    background-color: #ffe6ac;
+    padding-top: 25px;
+    padding-left: 10px;
+
+}
+
+.hours table tbody th,
+td {
+    border: 1px solid #222;
+    height: 7vh;
+    font-weight: bold;
+    color: #222;
+    text-align: left;
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 10px;
+}
+
+/* Contect Us over */
+/*  Location start */
+
+.location iframe {
+    width: 97%;
+    height: 40vh;
+    max-width: 760px;
+    margin: 0 auto;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+
+/* Main over */
+/* footer start */
+
+.foot {
+    background-color: #222;
+    color: #c68f2b;
+    padding-bottom: 40px;
+}
+
+.foot p {
+    padding-top: 40px;
+    padding-right: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 2vw;
+}
+
+.foot a {
+    color: #c68f2b;
+}
+
+/* desktop version */
+@media screen and (min-width: 760px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .masthead {
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background: #222;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner {
+        background-color: #222;
+    }
+
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .navlist {
+        display: flex;
+        flex-direction: row;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    .navlist li {
+        width: 120px;
+        height: fit-content;
+        text-align: center;
+    }
+
+    .navlist li a {
+        font-size: medium;
+        color: #c68f2b;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .search input {
+        width: 20vh;
+        height: 40px;
+    }
+
+    /* header complete */
+    /* start content > threestars*/
+
+    .threestars div {
+        background: rgba(2, 2, 2, 0.6);
+        margin-top: 30px;
+        margin-bottom: 30px;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+
+    .threestars h1 {
+        font-size: 64px;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+    .threestars p {
+        font-size: 16px;
+    }
+
+    .threestars button {
+        width: 200px;
+        height: 80px;
+        font-size: large;
+    }
+
+    /* content > threestars complete */
+    /* start content > about us */
+
+    .aboutus {
+        display: flex;
+        flex-direction: row;
+        padding-left: 120px;
+        padding-right: 120px;
+        background-color: #ffe6ac;
+    }
+
+    .aboutus img {
+        width: 50%;
+        height: 50%;
+    }
+
+    .aboutus div h2 {
+        font-size: 32px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .aboutus p {
+        font-size: 16px;
+    }
+
+    /* content > about us complete */
+    /* start content > ourservices */
+
+    .ourservices {
+        background-color: white;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .ourservices h2 {
+        font-size: 32px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .group1 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5px;
+    }
+
+    .group2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .digital,
+    .marketing,
+    .video,
+    .web,
+    .print {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background-color: #ffe6ac;
+        padding-bottom: 20px;
+    }
+
+    .digital h3,
+    .marketing h3,
+    .video h3,
+    .web h3,
+    .print h3 {
+        color: #222;
+        font-weight: bold;
+        font-size: 28px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .digital p,
+    .marketing p,
+    .video p,
+    .web p,
+    .print p {
+        color: #222;
+        font-size: 16px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+    }
+
+    .digital button,
+    .marketing button {
+
+        height: fit-content;
+        width: 96%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: #222;
+        color: white;
+        align-self: center;
+        font-size: 1.2rem;
+    }
+
+    .video button,
+    .web button,
+    .print button {
+
+        height: fit-content;
+        width: 94%;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: #222;
+        color: white;
+        align-self: center;
+        font-size: 1.2rem;
+    }
+    /* How should I move this button in the middle? */
+
+    /* content > ourservices complete */
+    /* start content > vision */
+
+    .vision {
+        background: url(../images/vision.jpg) no-repeat center;
+        background-size: 100%;
+        width: 100%;
+        height: fit-content;
+        margin-top: 10px;
+    }
+
+    .vision h3 {
+        font-size: 28px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .vision p {
+        font-size: 16px;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
+    .vision button {
+        margin-left: 120px;
+        margin-right: 120px;
+        width: 200px;
+        height: fit-content;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    /* content > vision complete */
+    /* start content > team */
+
+    .team {
+        display: flex;
+        flex-direction: column;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    .team h2 {
+        font-size: 32px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .team h3 {
+        color: #222;
+        font-weight: bold;
+        font-size: 28px;
+        padding-top: 20px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .team h4 {
+        color: #222;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 10px 10px 10px 10px;
+    }
+
+    .team p {
+        font-size: 16px;
+    }
+
+
+    .john {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .john-doe {
+        width: 50%;
+        height: 50%;
+    }
+
+    .bob {
+        display: flex;
+        flex-direction: row-reverse
+    }
+
+    .bob-rite {
+        width: 50%;
+        height: 50%;
+    }
+
+    .john,
+    .bob {
+        margin-bottom: -10px;
+    }
+
+     /* content > team complete */
+    /* start content > contect us */
+
+    .cont {
+        font-size: 36px;
+        font-weight: bold;
+        margin-left: 120px;
+        margin-right: 120px;
+        margin-top: 40px;
+        padding-left: 10px;       
+
+    }
+
+    .contect {
+        margin-left: 120px;
+        margin-right: 120px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "C1 C2"
+        "C3 C3"
+    }
+
+    .form {grid-area: C1;}
+    .location {grid-area: C2;}
+    .hours {grid-area: C3;}
+
+    .contect h2 {
+        font-size: 32px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 10px;
+    }
+
+    .contect h3 {
+        font-size: 28px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    .form .name label,
+    .form .email label,
+    .form .message label{
+        font-size: 16px;
+    } 
+
+    .form .name input {
+        height: 30px;
+    }
+
+    .form .email input {
+        height: 30px;
+    }
+
+    .form .message textarea {
+        height: 75px;
+    }
+
+    .form button {
+        font-weight: bold;
+        font-size: 16px;
+        width: fit-content;
+        height: fit-content;
+        margin-left: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }    
+
+        
+    .hours table thead th,
+    td {
+        height: 30px;
+        font-weight: bold;
+        font-size: 16px;
+        padding-top: 20px;
+        padding-bottom: 10px;   
     
+    }
+    
+    .hours table tbody th,
+    td {
+        border: 1px solid #222;
+        height: 30px;
+        padding-top: 30px;
+        padding-bottom: 10px;
+    }
+
+    .foot {
+        width: 80%;
+        margin-left: 120px;
+        margin-top: -200px;
+        /* margin-right: 120px;  I don't know why margin-right has no effect? */
+    }
+
+    .foot p {
+        padding-top: 30px;
+        padding-right: 10px;
+        margin-left: 10px;
+        font-size: 16px;
+    }
+
 }
