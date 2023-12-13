@@ -1,0 +1,31 @@
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: font-family: 'Bebas Neue', sans-serif; */
+
+body {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header,
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+h1,
+h2 {
+    font-family: 'Roboto', sans-serif;
+}
+
+.fa-magnifying-glass, .fa-brands, .fa-wand-magic-sparkles {
+    font-size: 6rem;
+    color: purple;
+}
+
+.maps iframe {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    display: block;
+    /* margin: 0 auto + display: block */
+}

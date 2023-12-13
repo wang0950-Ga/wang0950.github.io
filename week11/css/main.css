@@ -270,29 +270,29 @@ MEDIA QUERY 800PX
             "left right1"
             "left right2"
         ;
-        gap:1em;
+        gap: 1em;
     }
 
-    .news h2{
+    .news h2 {
         grid-area: header;
     }
 
-    .news .left{
+    .news .left {
         grid-area: left;
     }
 
-    .right{
+    .right {
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 1em;
     }
 
-    .news .right img{
+    .news .right img {
         grid-row: 1 / 3;
     }
 
-    .news .right h3{
+    .news .right h3 {
         margin-top: 0;
-        font-size: 1.5rem;
-    }
+        font-size: 1.5rem;
+    }
 }
